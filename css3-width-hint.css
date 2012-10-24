@@ -72,7 +72,7 @@ body:after {
 }
 @media only screen and (min-width: 1680px) {
 	body:after {
-		content: "1680 and up";
+		content: "1680px and higher";
 		background-color: #FF0000;
 	}
 }
