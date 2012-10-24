@@ -1,0 +1,78 @@
+/* ======================================
+
+	CSS3 Width Hint
+	  v. 1.0.0
+	  by Ingo Krumbein - ingo-krumbein.de
+
+========================================= */
+
+body:after {
+	font-family: Source Code Pro, Verdana, sans-serif;
+	content: "less than 320px";
+	font-size: 150%;
+	padding: 3px 0;
+	font-style: italic;
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	background-color: #FF0000;
+	opacity: 0.75;
+	text-shadow: 1px 1px #000;
+	color: #eee;
+	z-index: 9999;
+}
+@media only screen and (min-width: 320px) {
+	body:after {
+		content: "320 to 480px";
+		background-color: #FF00CC;
+	}
+}
+@media only screen and (min-width: 480px) {
+	body:after {
+		content: "480 to 640px";
+		background-color: #A200FF;
+	}
+}
+@media only screen and (min-width: 640px) {
+	body:after {
+		content: "640 to 800px";
+		background-color: #1500FF;
+	}
+}
+@media only screen and (min-width: 800px) {
+	body:after {
+		content: "800 to 960px";
+		background-color: #009DFF;
+	}
+}
+@media only screen and (min-width: 960px) {
+	body:after {
+		content: "960 to 1120px";
+		background-color: #00FF8C;
+	}
+}
+@media only screen and (min-width: 1120px) {
+	body:after {
+		content: "1120 to 1280px";
+		background-color: #15FF00;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	body:after {
+		content: "1280 to 1440px";
+		background-color: #FF9500;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	body:after {
+		content: "1440 to 1680px";
+		background-color: #FF4000;
+	}
+}
+@media only screen and (min-width: 1680px) {
+	body:after {
+		content: "1680 and up";
+		background-color: #FF0000;
+	}
+}
